@@ -1,9 +1,17 @@
-import "./App.css";
+import "./index.css";
+import Employee from "./components/Employee";
 
 function App() {
+  const showEmployee = false;
   return (
     <div className="App bg-red-300">
-      <h1>Hello world</h1>
+      {showEmployee ? (
+        <>
+          <Employee />
+        </>
+      ) : (
+        <p>You cannot see the Employee</p>
+      )}
     </div>
   );
 }
