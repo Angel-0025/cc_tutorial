@@ -70,11 +70,10 @@ function Employees() {
   const showEmployee = true;
 
   return (
-    <div className="App bg-gray-300 min-h-screen">
-
+    <div className="">
       {showEmployee ? (
         <>
-          <div className="flex flex-wrap justify-center my-2">
+          <div className="flex flex-wrap justify-center">
             {employees.map((employee) => {
               // Different way to pass the data // props
               const editEmployee = (
