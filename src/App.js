@@ -11,11 +11,10 @@ function App() {
     <BrowserRouter>
       <Header>
         <Routes>
-          <Route path="/Employees" element={<Employees />} />
-          <Route path="/Dictionary" element={<Dictionary />} />
-          <Route path="/definition" element={<Definition />} />
+          <Route path="/employees" element={<Employees />} />
+          <Route path="/dictionary" element={<Dictionary />} />
           <Route path="/definition/:search" element={<Definition />} />
-          <Route path="/Customer" element={<Customer />} />
+          <Route path="/customer" element={<Customer />} />
         </Routes>
       </Header>
     </BrowserRouter>
