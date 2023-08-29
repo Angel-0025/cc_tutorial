@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useNavigate, useParams, Link } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
 import NotFound from "../components/NotFound";
+import DefinitionSearch from "../components/DefinitionSearch";
 
 const Definition = () => {
   const [word, setWord] = useState([]);
@@ -66,6 +67,8 @@ const Definition = () => {
               </p>
             );
           })}
+          <p>Search Again: </p>
+          <DefinitionSearch />
         </>
       ) : null}
     </>
